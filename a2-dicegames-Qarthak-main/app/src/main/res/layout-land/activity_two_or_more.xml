@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoOrMoreActivity"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="0dp">
+
+  <TextView
+      android:id="@+id/txt_balance_label3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/coins"
+      app:layout_constraintBottom_toTopOf="@+id/btn_3alike"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:layout_editor_absoluteX="142dp" />
+
+  <TextView
+      android:id="@+id/txt_die2"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_marginBottom="44dp"
+      android:background="@color/purple_500"
+      android:contentDescription="@string/six_faced_die"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      android:textColor="@color/white"
+      android:textSize="80sp"
+      app:layout_constraintBottom_toTopOf="@+id/guideline_h"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:layout_editor_absoluteX="543dp" />
+
+  <TextView
+      android:id="@+id/txt_balance_twoormore"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="4dp"
+      android:text="@string/zero"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+      tools:layout_editor_absoluteX="226dp"
+      tools:layout_editor_absoluteY="241dp" />
+
+  <TextView
+      android:id="@+id/txt_die1"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_marginBottom="44dp"
+      android:background="@color/purple_500"
+      android:contentDescription="@string/six_faced_die"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      android:textColor="@color/white"
+      android:textSize="80sp"
+      app:layout_constraintBottom_toTopOf="@+id/guideline_h"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:layout_editor_absoluteX="399dp" />
+
+  <TextView
+      android:id="@+id/txt_die4"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:background="@color/purple_500"
+      android:contentDescription="@string/six_faced_die"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      android:textColor="@color/white"
+      android:textSize="80sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txt_die2"
+      tools:layout_editor_absoluteX="543dp" />
+
+  <TextView
+      android:id="@+id/txt_die3"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:background="@color/purple_500"
+      android:contentDescription="@string/six_faced_die"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      android:textColor="@color/white"
+      android:textSize="80sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txt_die1"
+      tools:layout_editor_absoluteX="399dp" />
+
+  <Button
+      android:id="@+id/btn_go"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/purple_500"
+      android:text="@string/go"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.157"
+      app:layout_constraintStart_toEndOf="@+id/edit_wager"
+      app:layout_constraintTop_toTopOf="@+id/edit_wager"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <EditText
+      android:id="@+id/edit_wager"
+      android:layout_width="176dp"
+      android:layout_height="45dp"
+      android:autofillHints="Wager"
+      android:ems="10"
+      android:hint="@string/wager"
+      android:inputType="number"
+      android:minHeight="48dp"
+      android:textAlignment="center"
+      android:textColorHint="#757575"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/txt_balance_twoormore"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_h"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.6" />
+
+  <RadioGroup
+      android:id="@+id/radioGroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toTopOf="@+id/edit_wager"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+  </RadioGroup>
+
+  <Button
+      android:id="@+id/btn_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="44dp"
+      android:text="@string/back"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edit_wager" />
+
+  <Button
+      android:id="@+id/btn_info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="440dp"
+      android:text="@string/info"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/btn_back"
+      app:layout_constraintTop_toBottomOf="@+id/edit_wager" />
+
+  <RadioButton
+      android:id="@+id/btn_2alike"
+      android:layout_width="86dp"
+      android:layout_height="46dp"
+      android:layout_margin="4dp"
+      android:checked="true"
+      android:text="@string/two_alike"
+      app:layout_constraintBottom_toTopOf="@+id/guideline_h"
+      app:layout_constraintEnd_toStartOf="@+id/btn_3alike"
+      app:layout_constraintHorizontal_bias="0.428"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <RadioButton
+      android:id="@+id/btn_3alike"
+      android:layout_width="83dp"
+      android:layout_height="46dp"
+      android:layout_margin="4dp"
+      android:text="@string/three_alike"
+      tools:layout_editor_absoluteX="130dp"
+      tools:layout_editor_absoluteY="99dp" />
+
+  <RadioButton
+      android:id="@+id/btn_4alike"
+      android:layout_width="80dp"
+      android:layout_height="43dp"
+      android:layout_margin="4dp"
+      android:layout_marginStart="48dp"
+      android:text="@string/four_alike"
+      app:layout_constraintEnd_toStartOf="@+id/txt_die1"
+      app:layout_constraintHorizontal_bias="0.4"
+      app:layout_constraintStart_toEndOf="@+id/btn_3alike"
+      tools:layout_editor_absoluteY="101dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
